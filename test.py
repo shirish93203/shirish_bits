@@ -1,0 +1,1 @@
+arr_var =['car','bus']

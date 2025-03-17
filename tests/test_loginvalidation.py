@@ -1,3 +1,4 @@
+import pytest
 from selenium.webdriver.common.by import By
 import os
 import sys
@@ -11,11 +12,19 @@ from selenium import webdriver
 
 class LoginValidation(LoginPage):
 
+
     def test_launch_url(self):
         self.open_login_page(url="https://rahulshettyacademy.com/locatorspractice/")
         self.enter_username(locator_type=By.XPATH,locator_value="//input[@id='inputUsername']")
         self.enter_password(locator_type=By.XPATH,locator_value="//input[@name='inputPassword']")
         self.click(locator_type=By.CSS_SELECTOR,locator_value="input[name='inputPassword']")
+
+    pytest.mark.usefixtures("setup")
+    pytest.mark.smoke
+    def test_parallel_execution(self, setup):
+        self.open_login_page(url="https://google.com")
+
+
 
     def tear_down(self):
         WebDriverManager.quit_browser()
