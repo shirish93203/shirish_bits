@@ -75,6 +75,5 @@ Oct 2014 - Jul 2017
 ## Certifications and Professional Development
 - AI-assisted QA Automation (hands-on practice with Cursor, Claude, Sonnet workflows)
 - Agile/SAFe/Kanban Scrum delivery execution across multi-team programs
-- Add official certifications in this format:
-  - [Certification Name] - [Issuing Organization] - [Year]
-  - [Certification Name] - [Issuing Organization] - [Year]
+- ISTQB Certified Tester Foundation Level (CTFL) - ISTQB
+- ISTQB Test Automation Engineer (TAE) - ISTQB
